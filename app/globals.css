@@ -7,23 +7,9 @@
 .quicksand {
 	font-family: "Quicksand", sans-serif;
 }
-/* 
-.about-subtext {
-	absolute bottom-[-80dvh] left-1/2 w-full max-w-96 -translate-x-1/2 text-center font-circular-web text-lg md:max-w-[34rem];
-}
 
-.about-image {
-	absolute left-1/2 top-0 z-20 h-[60vh] w-96 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw];
-}
- */
-/* 
 .animated-word {
-	transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg) !important;
+	transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
 	transform-origin: 50% 50% -150px !important;
-	will-change: opacity, transform !important;
-}
- */
-
-.mask-clip-path {
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	will-change: opacity, transform;
 }
