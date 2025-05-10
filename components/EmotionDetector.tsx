@@ -30,77 +30,77 @@ const EmotionDetector = () => {
 	// Enhanced color mapping with gradients
 	const emotionStyles = {
 		happy: {
-			bg: "bg-gradient-to-br from-yellow-300 to-yellow-500",
+			bg: "bg-gradient-to-br from-yellow-100 to-yellow-300",
 			text: "text-yellow-900",
 			border: "border-yellow-400",
 		},
 		sad: {
-			bg: "bg-gradient-to-br from-blue-800 to-indigo-900",
+			bg: "bg-gradient-to-br from-blue-100 to-indigo-300",
 			text: "text-blue-100",
 			border: "border-blue-600",
 		},
 		neutral: {
-			bg: "bg-gradient-to-br from-gray-700 to-gray-900",
+			bg: "bg-gradient-to-br from-gray-100 to-gray-300",
 			text: "text-gray-200",
 			border: "border-gray-500",
 		},
 		angry: {
-			bg: "bg-gradient-to-br from-red-600 to-red-800",
+			bg: "bg-gradient-to-br from-red-100 to-red-300",
 			text: "text-red-100",
 			border: "border-red-500",
 		},
 		surprised: {
-			bg: "bg-gradient-to-br from-purple-500 to-purple-700",
+			bg: "bg-gradient-to-br from-purple-100 to-purple-300",
 			text: "text-purple-100",
 			border: "border-purple-400",
 		},
 		fearful: {
-			bg: "bg-gradient-to-br from-orange-600 to-orange-800",
+			bg: "bg-gradient-to-br from-orange-100 to-orange-300",
 			text: "text-orange-100",
 			border: "border-orange-500",
 		},
 		disgusted: {
-			bg: "bg-gradient-to-br from-green-800 to-green-900",
+			bg: "bg-gradient-to-br from-green-100 to-green-300",
 			text: "text-green-100",
 			border: "border-green-700",
 		},
 		content: {
-			bg: "bg-gradient-to-br from-teal-500 to-teal-700",
+			bg: "bg-gradient-to-br from-teal-100 to-teal-300",
 			text: "text-teal-100",
 			border: "border-teal-400",
 		},
 		amused: {
-			bg: "bg-gradient-to-br from-pink-400 to-pink-600",
+			bg: "bg-gradient-to-br from-pink-100 to-pink-300",
 			text: "text-pink-100",
 			border: "border-pink-400",
 		},
 		concerned: {
-			bg: "bg-gradient-to-br from-indigo-500 to-indigo-700",
+			bg: "bg-gradient-to-br from-indigo-100 to-indigo-300",
 			text: "text-indigo-100",
 			border: "border-indigo-400",
 		},
 		annoyed: {
-			bg: "bg-gradient-to-br from-amber-600 to-amber-800",
+			bg: "bg-gradient-to-br from-amber-100 to-amber-300",
 			text: "text-amber-100",
 			border: "border-amber-500",
 		},
 		confused: {
-			bg: "bg-gradient-to-br from-cyan-600 to-cyan-800",
+			bg: "bg-gradient-to-br from-cyan-100 to-cyan-300",
 			text: "text-cyan-100",
 			border: "border-cyan-500",
 		},
 		excited: {
-			bg: "bg-gradient-to-br from-fuchsia-500 to-fuchsia-700",
+			bg: "bg-gradient-to-br from-fuchsia-100 to-fuchsia-300",
 			text: "text-fuchsia-100",
 			border: "border-fuchsia-400",
 		},
 		bored: {
-			bg: "bg-gradient-to-br from-stone-500 to-stone-700",
+			bg: "bg-gradient-to-br from-stone-100 to-stone-300",
 			text: "text-stone-100",
 			border: "border-stone-400",
 		},
 		disappointed: {
-			bg: "bg-gradient-to-br from-rose-800 to-rose-900",
+			bg: "bg-gradient-to-br from-rose-100 to-rose-300",
 			text: "text-rose-100",
 			border: "border-rose-700",
 		},

@@ -2,6 +2,7 @@
 
 * {
 	font-family: "Quicksand", sans-serif;
+	animation-fill-mode: forwards;
 }
 
 .quicksand {
@@ -12,4 +13,50 @@
 	transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
 	transform-origin: 50% 50% -150px !important;
 	will-change: opacity, transform;
+}
+/* 
+@keyframes pulse {
+	0%,
+	100% {
+		transform: scaleY(0.5);
+		opacity: 0.7;
+	}
+	50% {
+		transform: scaleY(1);
+		opacity: 1;
+	}
+}
+
+.animate-pulse {
+	animation: pulse 0.5s ease-in-out infinite alternate !important;
+	transform-origin: center bottom;
+}
+
+.animation-delay-\[var\(--delay\)\] {
+	animation-delay: var(--delay);
+}
+ */
+
+.indicator-line {
+	@apply h-4 w-1 rounded-full bg-black transition-all duration-200 ease-in-out;
+}
+
+.indicator-line.active {
+	animation: indicator-line 0.5s ease infinite;
+	animation-delay: calc(var(--animation-order) * 0.1s);
+}
+
+@keyframes indicator-line {
+	0% {
+		height: 8px;
+		transform: translateY(-0px);
+	}
+	50% {
+		height: 24px;
+		transform: translateY(-4px);
+	}
+	100% {
+		height: 8px;
+		transform: translateY(-0px);
+	}
 }

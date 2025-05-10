@@ -38,7 +38,7 @@ const AnimatedTitle = ({ title, containerClass }) => {
 		<div
 			ref={containerRef}
 			className={clsx(
-				"flex flex-col gap-1 text-7xl uppercase leading-[.8] text-white sm:px-32 md:text-[4rem]",
+				"flex flex-col gap-1 text-7xl uppercase leading-[1] text-white sm:px-32 md:text-[4rem]",
 				containerClass
 			)}
 		>
@@ -50,7 +50,7 @@ const AnimatedTitle = ({ title, containerClass }) => {
 					{line.split(" ").map((word, idx) => (
 						<span
 							key={idx}
-							className="animated-word special-font font-zentry font-black opacity-0"
+							className="animated-word special-font font-zentry font-black opacity-0 mx-[0.75rem] tracking-[-0.15rem]"
 							dangerouslySetInnerHTML={{ __html: word }}
 						/>
 					))}
