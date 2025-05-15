@@ -151,14 +151,14 @@ const EmotionDetector = () => {
 
 	return (
 		<div
-			className={`min-h-screen transition-all duration-700 ${currentStyle.bg} flex flex-col items-center justify-start py-12 px-4 ${currentStyle.text}`}
+			className={`min-h-screen transition-all duration-700 bg-neutral-950 flex flex-col items-center justify-center py-12 px-4 `}
 		>
-			<div className="w-full max-w-4xl mx-auto">
+			<div className="w-full max-w-[80vw] mx-auto">
 				<div className="text-center mb-10">
-					<h1 className="text-5xl font-bold mb-2 tracking-tight">
+					<h1 className="text-5xl font-bold mb-2 tracking-tight text-white">
 						Emotion Detection
 					</h1>
-					<p className="text-xl opacity-80">
+					<p className="text-xl opacity-80 text-white">
 						Capture your current emotional state with AI
 					</p>
 				</div>
@@ -172,7 +172,7 @@ const EmotionDetector = () => {
 								mirrored={true}
 								ref={webcamRef}
 								screenshotFormat="image/jpeg"
-								className="rounded-xl border-4 border-white/70 shadow-2xl w-full h-auto transition-all duration-300 group-hover:scale-[1.02] group-hover:shadow-xl"
+								className="rounded-xl border-4 border-white/70 shadow-2xl w-full h-[50vh] object-cover transition-all duration-300 group-hover:scale-[1.02] group-hover:shadow-xl"
 							/>
 							<div className="absolute inset-0 rounded-xl border-4 border-transparent group-hover:border-white/30 pointer-events-none transition-all duration-300" />
 						</div>
@@ -213,7 +213,9 @@ const EmotionDetector = () => {
 							className={`bg-black/30 backdrop-blur-sm p-8 rounded-xl border ${currentStyle.border} shadow-xl transition-all duration-500`}
 						>
 							<div className="text-center">
-								<h2 className="text-2xl font-semibold mb-4">Primary Emotion</h2>
+								<h2 className="text-2xl font-semibold mb-4 text-white">
+									Primary Emotion
+								</h2>
 								<div
 									className={`text-4xl font-bold capitalize py-4 px-8 rounded-full inline-block ${currentStyle.bg} ${currentStyle.border} border-2 shadow-md animate-pulse-once`}
 								>
@@ -223,14 +225,14 @@ const EmotionDetector = () => {
 
 							{secondaryEmotions.length > 0 && (
 								<div className="mt-8">
-									<h3 className="text-xl font-semibold mb-3 text-center">
+									<h3 className="text-xl font-semibold mb-3 text-center text-white">
 										Also Detected
 									</h3>
 									<div className="flex flex-wrap justify-center gap-3">
 										{secondaryEmotions.map((emotion, index) => (
 											<span
 												key={index}
-												className="capitalize px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full border border-white/20 hover:scale-105 transition-all duration-200"
+												className="capitalize px-4 py-2 bg-white/50 text-black font-semibold backdrop-blur-sm rounded-full border border-white/20 hover:scale-105 transition-all duration-200"
 											>
 												{emotion}
 											</span>
@@ -244,8 +246,10 @@ const EmotionDetector = () => {
 							<div
 								className={`bg-black/30 backdrop-blur-sm p-6 rounded-xl border ${currentStyle.border} shadow-xl transition-all duration-500 overflow-hidden`}
 							>
-								<h3 className="text-xl font-semibold mb-3">Analysis Details</h3>
-								<div className="text-sm opacity-90 leading-relaxed max-h-60 overflow-y-auto pr-2 custom-scrollbar">
+								<h3 className="text-xl font-semibold mb-3 text-white">
+									Analysis Details
+								</h3>
+								<div className="text-sm opacity-90 leading-relaxed max-h-60 overflow-y-auto pr-2 custom-scrollbar text-white">
 									{fullResponse}
 								</div>
 							</div>

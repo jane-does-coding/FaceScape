@@ -38,11 +38,11 @@ const About = () => {
 				/>
 
 				<div className="about-subtext absolute bottom-[-80dvh] left-1/2 w-full max-w-96 -translate-x-1/2 text-center font-circular-web text-lg md:max-w-[34rem]">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+					<p>FaceScape blends AI and emotion</p>
 					<p className="text-gray-500">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-						autem saepe voluptatibus placeat porro officiis nostrum quas ea
-						laudantium doloremque.
+						To create a unique, real-time interactive web experience. Using your
+						webcam, it adapts visuals to your mood while teaching you how facial
+						recognition and AI work together in tech.
 					</p>
 				</div>
 			</div>
