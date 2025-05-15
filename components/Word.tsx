@@ -2,7 +2,7 @@
 import { useScroll, motion, useTransform, MotionValue } from "framer-motion";
 import React, { useRef, ReactNode } from "react";
 
-const Pharagraph = ({ value }: any) => {
+const Pharagraph = ({ value }: { value: string }) => {
 	const element = useRef(null);
 	const { scrollYProgress } = useScroll({
 		target: element,
