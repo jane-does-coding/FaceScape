@@ -1,6 +1,6 @@
 "use client";
-import { useScroll, motion, useTransform } from "framer-motion";
-import React, { useRef } from "react";
+import { useScroll, motion, useTransform, MotionValue } from "framer-motion";
+import React, { useRef, ReactNode } from "react";
 
 const Pharagraph = ({ value }: any) => {
 	const element = useRef(null);
@@ -58,9 +58,9 @@ const Word = ({
 	range,
 	progress,
 }: {
-	children: any;
-	range: any;
-	progress: any;
+	children: ReactNode;
+	range: [number, number];
+	progress: MotionValue<number>;
 }) => {
 	const opacity = useTransform(progress, range, [0.1, 1]);
 	return (
