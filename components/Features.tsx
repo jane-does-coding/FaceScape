@@ -4,7 +4,6 @@ import {
 	TbMoodSmile,
 	TbRobot,
 	TbDeviceLaptop,
-	TbCurrencyDollarOff,
 	TbCode,
 	TbLayoutDashboard,
 	TbStars,

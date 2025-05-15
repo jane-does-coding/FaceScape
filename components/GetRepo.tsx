@@ -10,7 +10,7 @@ const GetRepo = () => {
 				<CodeBlockDemo />
 			</div>
 			<div className="w-1/2 flex flex-col px-[5vw]">
-				<h2 className="text-white">Wonder what it's built with?</h2>
+				<h2 className="text-white">Wonder what it&apos;s built with?</h2>
 			</div>
 		</div>
 	);
