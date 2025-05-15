@@ -4,11 +4,8 @@ import AudioBtn from "@/components/AudioBtn";
 import { CodeBlockDemo } from "@/components/CodeBlock";
 import EmotionDetector from "@/components/EmotionDetector";
 import { FeaturesSectionDemo } from "@/components/Features";
-import GetRepo from "@/components/GetRepo";
 import { GoogleGeminiEffectDemo } from "@/components/Grid";
-import Quotes from "@/components/Quotes";
 import Pharagraph from "@/components/Word";
-import { CodeBlock } from "@/ui/code-block";
 
 export default function Home() {
 	const sampletext =

@@ -53,7 +53,15 @@ const Pharagraph = ({ value }: any) => {
 	);
 };
 
-const Word = ({ children, range, progress }: any) => {
+const Word = ({
+	children,
+	range,
+	progress,
+}: {
+	children: any;
+	range: any;
+	progress: any;
+}) => {
 	const opacity = useTransform(progress, range, [0.1, 1]);
 	return (
 		<motion.span style={{ opacity }} className="mr-4">
